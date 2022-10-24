@@ -1,21 +1,12 @@
 import './App.css';
-import NavBar from "./components/NavBar";
+import ItemListContainer from './components/ItemListContainer';
 
-const misEstilos = {
-  color: "#f8f316",
-}
-
-function App() {
-const title = "Enchulate";
-  return ( 
-    <>
-    <div className="App">
-      <header className="App-header">
-        <nav><NavBar/></nav>
-        <h1 style={misEstilos}>{title}</h1>
-      </header>
+const App = () => {
+  return (
+    <div >
+      <ItemListContainer/>
     </div>
-    </>
   );
 }
+
 export default App;
